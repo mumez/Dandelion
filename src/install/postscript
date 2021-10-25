@@ -1,0 +1,1 @@
+StringHolder new		acceptContents: (self zip memberNamed: 'install/Readme.txt') contents;		openLabel: 'README-Dandelion'.

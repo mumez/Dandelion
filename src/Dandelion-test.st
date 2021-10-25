@@ -1,0 +1,1 @@
+Object subclass: #DlBar	instanceVariableNames: 'foo baz '	classVariableNames: ''	poolDictionaries: ''	category: 'Dandelion-test'!!DlBar methodsFor: 'initialize-release' stamp: 'MU 4/8/2002 16:40'!initialize	foo := DlFoo new.	baz := 1.! !Object subclass: #DlFoo	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'Dandelion-test'!
