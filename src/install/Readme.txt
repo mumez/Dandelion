@@ -1,4 +1,4 @@
-* Dandelion0.5beta3 *
+* Dandelion0.6.x *
 
 Dandelion is a generic Smalltalk code analysis/output framework. 
 You can analyze your code and output the information in various formats 
@@ -17,7 +17,7 @@ Example: Please open a FileList to see the results.
 "Analyse 'Monticello1' changeSet and generate all supported format files"
 | dandelion formats |
 	dandelion := DlDandelionSystem new.
-	dandelion analyzeChangeSet: (ChangeSorter changeSetNamed: 'Monticello1').
+	dandelion analyzeChangeSet: (ChangesOrganizer changeSetNamed: 'Dandelion-utils.st').
 	formats := #(outputHtml outputSmix outputPetal outputXmiUml).
 	formats do: [:each |dandelion setPropertyArray: {{#outputRootDirectoryArray. {each}}}.
 		dandelion perform: each.
@@ -25,4 +25,4 @@ Example: Please open a FileList to see the results.
 
 ---
 
-2004/11/25 12:30 M.Umezawa
+2021/10/28 11:40 M.Umezawa
